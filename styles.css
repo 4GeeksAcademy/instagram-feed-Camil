@@ -1,0 +1,30 @@
+
+.container-fluid{
+    background: #fafafa;
+    height: 100%;
+    padding-top: 15px;
+    align-items: center;
+     }
+    .dropdown-menu {
+        display: none;
+    }
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .grid-icon{
+        text-align: center;
+        padding-top: 60px;
+    }
+    
+    .rectangle{
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 10px;}
