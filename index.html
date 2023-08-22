@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instafeed</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-gris.png" width="30"
+                    height="30" class="d-inline-block align-top" alt="IG logo">Instagram
+            </a>
+            <div class="d-flex justify-content-between mx-3">
+                <button type="button" class="btn btn-success cnp" data-bs-toggle="modal" data-bs-target="#postModal">Create new post</button>
+                <div class="modal" tabindex="-1" id="postModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="d-flex modalButtons">
+                              <button type="button" class="btn btn-light my-2 mx-1"> <i class="fa-solid fa-camera"></i> </button>
+                            <button type="button" class="btn btn-light my-2 mx-1"> <i class="fa-solid fa-location-dot"></i> </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle cpn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accessibility</a>
+                        <a class="dropdown-item" href="#">Privacy and Data</a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item text-danger" href="#"> Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-flex justify-content-center py-3 ">
+        <ul class="nav nav" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square-tab-pane" type="button" role="tab" aria-controls="square-tab-pane" aria-selected="true"><i class="fa-solid fa-square"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane" type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="false"><i class="fa-solid fa-table-cells grid"></i></button>
+            </li>
+        </ul>
+</div>
+
+
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="square-tab-pane" role="tabpanel" aria-labelledby="square-tab">
+    
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <div class="card" style="width: 25rem;">
+                    <div class="card-header d-flex justify-content-between">
+                     <h4>   New post </h4>
+                    <span class="col-md-5">
+                    <p class="date">8/26</p></span>
+                    </div>
+                        <img class="card-img-top" src="https://i.pinimg.com/564x/7c/21/60/7c2160c2a960f1ff9b6570d565e00511.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"> 204 likes </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-98">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4> New post </h4>
+                            <span class="col-md-5">
+                                <p class="date"> 2/30</p>
+                            </span>
+                        </div>
+                        <img class="card-img-top" src="https://i.pinimg.com/564x/e7/6c/83/e76c83a1a9b46a3bc2d23a3102f14a9f.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> 204 likes </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4> New post </h4>
+                            <span class="col-md-5">
+                                <p class="date">5/12</p>
+                            </span>
+                        </div>
+                        <img class="card-img-top" src="https://i.pinimg.com/564x/6d/3c/5b/6d3c5b52f9e1fb772fbf747e4e7c68ac.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> 500 likes </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-98 ">
+                <div class="col-sm-8 col-md-6 col-lg-4 ">
+                    <div class="card end" style="width: 25rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4> New post </h4>
+                            <span class="col-md-5">
+                                <p class="date">10/20</p>
+                            </span>
+                        </div>
+                        <img class="card-img-top" src="https://i.pinimg.com/564x/02/a7/0f/02a70f251269d60f8a70ee2dc90b2519.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> 100 likes </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+    
+
+    </div>
+    </div>
+    </div>
+</div>
+    
+    
+    
+    
+    <div class="tab-pane fade py-3 pb-3" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+    <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/ba/85/ba/ba85ba70f5a9ab1a4729fb0bba47102d.jpg" class="card-img-top" alt="cat">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/57/31/05/573105a19ca753a4f85c61080da0e3bb.jpg" class="card-img-top" alt="editorial">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/2d/9b/af/2d9bafc60c7de5663504463ce2ea1888.jpg" class="card-img-top" alt="carrie">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/5c/7f/36/5c7f36d0ccdc2104177fe356ee36ce3d.jpg" class="card-img-top" alt="magritte">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/34/a2/63/34a2639e9ee299e9a1f743052a857781.jpg" class="card-img-top" alt="magritte">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/90/59/7e/90597eeca05f83b68e7cfcd46ec927ac.jpg" class="card-img-top" alt="building">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+      </div>     
+
+      <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/06/83/16/0683169a7da7b3502a55fe6b3a767c52.jpg" class="card-img-top" alt="vynil">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/12/f4/19/12f41904df2f3f8967f280e2a6e03095.jpg" class="card-img-top" alt="editorial">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/ec/4e/c6/ec4ec6bbf043a7f26ff098ef4f3e29c3.jpg" class="card-img-top" alt="building">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/c3/5a/dc/c35adc2032132c3867f215acc3d79a20.jpg" class="card-img-top" alt="vynil">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/28/66/58/286658be0a36b49cc7751ae808937c9e.jpg" class="card-img-top" alt="editorial">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/96/45/64/964564f7f3c223157c5b8595ee45eb07.jpg" class="card-img-top" alt="building">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+      </div>     
+      <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/60/f0/d2/60f0d2ced932e6939451faebdbe37980.jpg" class="card-img-top" alt="vynil">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/5a/5b/04/5a5b044ffc96082d5d66a81c35d26677.jpg" class="card-img-top" alt="editorial">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/4e/f9/36/4ef936b1535605786a5e4d9cd8098bb6.jpg" class="card-img-top" alt="building">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/87/6b/f7/876bf7bf7644206e24c8f146a76b6614.jpg" class="card-img-top" alt="vynil">
+          <div class="card-body">
+          </div>
+          <div class="">
+          </div>
+        </div>
+        
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/736x/db/1a/47/db1a47b6f9a2bcc1c5e2a68558a289b4.jpg" class="card-img-top" alt="editorial">
+          <div class="card-body">
+          
+            <p class="card-text">
+          </div>
+          <div class="">
+          
+          </div>
+        </div>
+        <div class="card-feed">
+          <img src="https://i.pinimg.com/564x/4b/ca/02/4bca02ada810dda9b40b960bc5826fe7.jpg" class="card-img-top" alt="building">
+          <div class="card-body">
+            
+          </div>
+          <div class="">
+        </div>
+          
+          </div>
+        </div>
+      </div>     
+     
+
+
+
+    
+  </div>
+
+
+    <script>
+        const dropdownButton = document.querySelector('.btn-secondary.dropdown');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        dropdownButton.addEventListener('mouseenter', () => {
+            dropdownMenu.style.display = 'block';
+        });
+
+        dropdownButton.addEventListener('mouseleave', () => {
+            dropdownMenu.style.display = 'none';
+        });
+
+       
+const myModalAlternative = new bootstrap.Modal('#myModal', options)
+
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+
+.container-fluid{
+    background: #fafafa;
+    height: 100%;
+    padding-top: 12px;
+    align-items: center;
+     }
+    .dropdown-menu {
+        display: none;
+    }
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.0rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .grid-tab{
+        display: flex;
+        text-align: center;
+        margin-top: 45px;
+        border: none;
+        
+        
+    }
+
+.square-tab{
+        
+    display: flex;
+    text-align: center;
+    margin-top: 45px;
+   
+    
+        }
+
+
+.date{
+     position: absolute;
+     padding-left: 110px;
+   
+       }
+    
+
+.cnp{margin-right: 20px;}
+.card-feed{
+  
+    width: 300px; 
+    height: 290px; 
+    padding-left: 5px;
+  
+  }
+
+.card-group{ padding-left: 280px;
+             padding-top: 10px;
+             
+             }
+section{padding-bottom: 30px;}
+
+
+.py-3 {
+    padding-top: 4rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.pb-3 {
+    padding-bottom: 13rem!important;
+}
+
+.modalButtons{padding-left: 20px;
+              padding-bottom: 20px;}
